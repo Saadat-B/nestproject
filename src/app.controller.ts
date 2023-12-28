@@ -9,16 +9,16 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
-  @Post()
+  @Post('post')
   postHello(): string {
     return this.appService.postHello();
   }
-  @Patch()
+  @Patch('patch')
   patchHello(): string {
-    return this.appService.postHello();
+    return this.appService.patchHello();
   }
-  @Delete()
+  @Delete('delete')
   deleteHello(): string {
-    return this.appService.postHello();
+    return this.appService.deleteHello();
   }
 }
